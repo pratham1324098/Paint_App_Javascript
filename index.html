@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/paint.jpg" type="image/x-icon">
+    <title>Paint</title>
+</head>
+<body style="margin: 0; padding: 0;">
+    <div class="field">
+        <div class="tools">
+                <div class="row_one">
+                    <img id="pencil" src="/assets/pencil.png" alt="">
+                    <img id="bucket" src="/assets/bucket.png" alt="">
+                    <img id="eraser" src="/assets/eraser.jpg" alt="">
+                </div>
+                <div class="row_two">
+                    <img src="/assets/magnifier.jpg" alt="">
+                    <img src="/assets/colorpicker.png" alt="">
+                    <img id ="customButton" src="/assets/text.png" alt="">
+                </div>
+                <center>
+                    <span style="font-size: 10px; ;">Tools</span
+                </center>
+            </div>
+            <span style="border: 1px solid rgb(190, 233, 236);"></span>
+            <div class="brushes">
+                <center>
+                    <img src="/assets/brushes.png" alt="" width="50px">
+                    <div class="dropdown">
+                        <button class="dropbtn"><img src="/assets/dropdown.jpg" alt="" width="10px"></button>
+                        <div class="dropdown-content">
+                            <img src="/Brushes/1.png" alt=""><img src="/Brushes/2.png" alt=""><img src="/Brushes/3.png" alt=""><img src="/Brushes/4.png" alt=""><img src="/Brushes/5.png" alt=""><img src="/Brushes/6.png" alt=""><img src="/Brushes/7.png" alt=""><img src="/Brushes/8.png" alt="">
+                        </div>
+                    </div>
+                </center>
+                <center>
+                    <span style="font-size: 10px;">Brushes</span
+                </center>  
+          </div>            
+          <span style="border: 1px solid rgb(190, 233, 236);"></span>
+
+          <div class="colors">
+              <div class="row_one">
+                <div onclick="change_color(this)" class="color-field" style="background: black;"></div>
+                <div onclick="change_color(this)" class="color-field" style="background: darkred;"></div>
+                <div onclick="change_color(this)" class="color-field" style="background: red;"></div>
+                <div onclick="change_color(this)" class="color-field" style="background: grey;"></div>
+                <div onclick="change_color(this)" class="color-field" style="background: orange;"></div>
+                <div onclick="change_color(this)" class="color-field" style="background: green;"></div>
+                <div onclick="change_color(this)" class="color-field" style="background: skyblue;"></div>
+                <div onclick="change_color(this)" class="color-field" style="background: blue;"></div>
+            </div>
+            <div class="row_two">
+                <div onclick="change_color(this)" class="color-field" style="background: grey;"></div>
+                <div onclick="change_color(this)" class="color-field" style="background: brown;"></div>
+                <div onclick="change_color(this)" class="color-field" style="background: white;"></div>
+                <div onclick="change_color(this)" class="color-field" style="background: pink;"></div>
+                <div onclick="change_color(this)" class="color-field" style="background: lightyellow;"></div>
+                <div onclick="change_color(this)" class="color-field" style="background: lightgreen;"></div>
+                <div onclick="change_color(this)" class="color-field" style="background: blueviolet;"></div>
+                <div onclick="change_color(this)" class="color-field" style="background: rgb(170, 170, 228);"></div>
+            </div>
+            <div class="row_three">
+                <div onclick="change_color(this)" class="color-field" style="background: rgb(252, 110, 2);"></div>
+                <div onclick="change_color(this)" class="color-field" style="background: rgb(26, 59, 79);"></div>
+                <div onclick="change_color(this)" class="color-field" style="background: rgb(168, 41, 185);"></div>
+                <div onclick="change_color(this)" class="color-field" style="background: rgb(201, 134, 71);"></div>
+                <div onclick="change_color(this)" class="color-field" style="background: rgb(174, 236, 20);"></div>
+                <div onclick="change_color(this)" class="color-field" style="background: rgb(2, 140, 246);"></div>
+                <div onclick="change_color(this)" class="color-field" style="background: rgb(232, 232, 10);"></div>
+                <div onclick="change_color(this)" class="color-field" style="background: rgb(202, 141, 193);"></div>
+            </div>
+            <center>
+                <span style="font-size: 10px; ;">Colors</span
+            </center> 
+        </div>
+        <span style="border: 1px solid rgb(190, 233, 236);"></span>
+        <div class="color1">
+            <center>
+                <div id="color1" style="  height: 40px; background-color: white; border: 1px solid black;"></div>
+                <span  style="font-size: 12px; ">Color 1 </span
+            </center>
+             
+      </div>            
+      <span style="border: 1px solid rgb(190, 233, 236);"></span>
+      <div class="size" style="margin-top: 10px;">
+        <center>Size</center>
+        <input id ="ranging" type="range" min="0" max="100" value="2" style="margin-top: 10px;">
+      </div>
+    <span style="border: 1px solid rgb(190, 233, 236);"></span>
+    
+        <div class="shapes">
+            <div class="row_one">
+
+            </div>
+            <div class="row_two">
+                
+            </div>
+        </div>
+    </div>
+    <div class="cursor-dot" data-cursor-dot></div>
+    <canvas id="canvas" willReadFrequently></canvas>
+    <button id="customButton" class="custom-button">Click me</button>
+</body>
+<script src="main.js"></script>
+</html>

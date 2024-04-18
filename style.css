@@ -1,0 +1,121 @@
+.field{
+    height: 85px;
+    background-color: aliceblue;
+}
+.field{
+    display: flex;
+
+    border: 5px solid rgb(137, 235, 244);
+    padding: 5px 5px;
+}
+.tools{
+    width: 7.5rem;
+    background-color: aliceblue;
+}
+
+.tools> .row_one> img{
+    height: 1rem;
+    padding: 0.5rem;
+}
+.tools>.row_one> img:hover{
+    background-color: rgb(223, 232, 232);
+    border: 2px solid rgb(164, 223, 240);
+    cursor: pointer;
+}
+.tools> .row_two> img{
+    height: 1rem;
+    padding: 0.5rem;
+}
+.tools>.row_two>img:hover{
+    background-color: rgb(222, 231, 231);
+    cursor: pointer;
+    border: 2px solid rgb(164, 223, 240);
+}
+.brushes{
+    width: 3.3rem;
+    height: 3rem;
+}
+
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position dropdown content below the button */
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content img {
+    display: block;
+    width: 2rem;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+/* Optional: Center align the button text */
+.dropbtn {
+    text-align: center;
+}
+.colors{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.color-field{
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid grey;
+
+}
+
+.color1{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.cursor-dot{
+    width: 3px;
+    height: 3px;
+    border: 1px solid grey;
+    display: none;
+}
+
+.cursor-dot {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    pointer-events: none;
+}
+.input_range{
+    display: flex;
+    border: 1px solid red;
+}
+
+.custom-button {
+    cursor: crosshair;
+    padding: 10px 20px;
+    background-color: #ccc;
+    border: none;
+    color: #000;
+    font-size: 16px;
+  }
+  .custom-button:hover {
+    background-color: #ddd;
+  }
+  .dotted-rectangle {
+    position: absolute;
+    border: 2px dotted #000;
+    pointer-events: none;
+    display: none;
+  }
